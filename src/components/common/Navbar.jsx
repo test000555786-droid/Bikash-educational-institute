@@ -26,8 +26,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-14 md:h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-2xl bg-cta-gradient flex items-center justify-center shadow-card group-hover:shadow-glow transition-all duration-300">
-              <span className="text-white font-bold text-lg font-display">B</span>
+            <div className="w-12 h-12 rounded-2xl overflow-hidden shadow-card group-hover:shadow-glow transition-all duration-300 flex items-center justify-center bg-white">
+              <img
+                src="/images/logo/Bikash-ins.png"
+                alt="Bikash Educational Institution Logo"
+                className="w-full h-full object-contain transition-all duration-300 group-hover:scale-105 group-hover:opacity-90"
+              />
             </div>
             <div>
               <p className={`font-bold text-sm leading-tight font-display transition-colors duration-300 ${isSolid ? 'text-slate-900' : 'text-white'}`}>Bikash</p>
@@ -43,7 +47,7 @@ export default function Navbar() {
                 to={l.path}
                 className={`px-3 py-2 rounded-xl text-[15px] font-medium transition-all duration-300 ${
                   location.pathname === l.path
-                    ? (isSolid ? 'bg-primary-50 text-primary-700 font-semibold shadow-sm' : 'bg-white/20 text-white font-semibold shadow-sm backdrop-blur-sm')
+                                        ? (isSolid ? 'bg-primary-100 text-primary-900 font-semibold shadow-sm' : 'bg-white/20 text-white font-semibold shadow-sm backdrop-blur-sm')
                     : (isSolid ? 'text-slate-600 hover:text-primary-700 hover:bg-slate-50' : 'text-slate-200 hover:text-white hover:bg-white/10')
                 }`}
               >
@@ -59,8 +63,8 @@ export default function Navbar() {
               aria-label="Call Us"
               className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-sm hover:shadow-glow hover:-translate-y-0.5 group ${
                 isSolid 
-                  ? 'bg-primary-50 text-primary-700 hover:bg-primary-700 hover:text-white'
-                  : 'bg-white/20 text-white backdrop-blur-sm hover:bg-white hover:text-primary-700'
+                                ? 'bg-primary-50 text-primary-700 hover:bg-primary-400 hover:text-slate-900'
+                  : 'bg-white/20 text-white backdrop-blur-sm hover:bg-primary-400 hover:text-slate-900'
               }`}
             >
               <Phone size={18} className="transition-transform duration-300 group-hover:scale-110" />

@@ -11,8 +11,29 @@ export default function EnquiryForm({ compact = false, light = false }) {
   const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm()
 
   const onSubmit = async (data) => {
-    await new Promise(r => setTimeout(r, 1000))
-    console.log('Enquiry:', data)
+    // Show brief loading state
+    await new Promise(r => setTimeout(r, 800))
+    
+    const WHATSAPP_NUMBER = "918249297170"; // Target WhatsApp Number
+    
+    // Format WhatsApp Message
+    const message = ` Hello, i want to know more
+
+ Name: ${data.name}
+ Phone: ${data.phone}
+ Class: ${data.class}
+ Message: ${data.message || 'None'}`;
+
+    // Encode Message
+    const encodedMessage = encodeURIComponent(message);
+    
+    // Generate WhatsApp URL
+    const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+    
+    // Handle Redirection
+    window.open(whatsappURL, "_blank");
+    
+    // Show success state
     setSubmitted(true)
   }
 

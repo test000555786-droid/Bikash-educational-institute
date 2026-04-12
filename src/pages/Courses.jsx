@@ -9,7 +9,7 @@ import FadeIn from '../components/animations/FadeIn'
 
 function PageHero() {
   return (
-    <section className="relative bg-cover bg-center pt-10 pb-16 md:pt-12 md:pb-20" style={{ backgroundImage: "url('/images/heroes/hero-courses.png')" }}>
+    <section className="relative bg-cover bg-center pt-10 pb-16 md:pt-12 md:pb-20" style={{ backgroundImage: "url('/images/heroes/hero-courses.jpg')" }}>
       <div className="absolute inset-0 bg-slate-900/70" />
       <div className="container-main relative z-10 text-center">
         <FadeIn>

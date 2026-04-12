@@ -16,13 +16,14 @@ function GalleryCard({ item, onClick }) {
       onClick={() => onClick(item)}
       className="cursor-pointer rounded-3xl overflow-hidden border border-slate-100 shadow-card hover:shadow-soft transition-all duration-300 group"
     >
-      {/* Placeholder image using colored div + emoji */}
-      <div
-        className="relative aspect-[4/3] flex items-center justify-center text-5xl select-none"
-        style={{ background: item.color }}
-      >
-        <span>{item.emoji}</span>
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 flex items-center justify-center">
+      {/* Real Image */}
+      <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
+        <img 
+          src={item.image} 
+          alt={item.title} 
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+        />
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center z-10">
           <ZoomIn size={28} className="text-white opacity-0 group-hover:opacity-100 transition-all duration-300 drop-shadow-lg" />
         </div>
       </div>
@@ -53,11 +54,8 @@ function Lightbox({ item, onClose }) {
           className="bg-white rounded-4xl overflow-hidden max-w-lg w-full shadow-2xl"
           onClick={e => e.stopPropagation()}
         >
-          <div
-            className="aspect-[4/3] flex items-center justify-center text-8xl"
-            style={{ background: item.color }}
-          >
-            {item.emoji}
+          <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
+            <img src={item.image} alt={item.title} className="absolute inset-0 w-full h-full object-cover" />
           </div>
           <div className="p-6 flex items-center justify-between">
             <div>
@@ -84,7 +82,7 @@ export default function Gallery() {
 
   return (
     <>
-      <section className="relative bg-cover bg-center pt-10 pb-16 md:pt-12 md:pb-20" style={{ backgroundImage: "url('/images/heroes/hero-gallery.png')" }}>
+      <section className="relative bg-cover bg-center pt-10 pb-16 md:pt-12 md:pb-20" style={{ backgroundImage: "url('/images/heroes/gallery-home.webp')" }}>
         <div className="absolute inset-0 bg-slate-900/70" />
         <div className="container-main relative z-10 text-center">
           <FadeIn>
@@ -108,7 +106,7 @@ export default function Gallery() {
                   onClick={() => setActiveCategory(cat)}
                   className={`px-5 py-2 rounded-2xl text-sm font-semibold transition-all duration-200 ${
                     activeCategory === cat
-                      ? 'bg-primary-700 text-white shadow-card'
+                      ? 'bg-primary-400 text-slate-900 shadow-card'
                       : 'bg-slate-100 text-slate-600 hover:bg-primary-50 hover:text-primary-700'
                   }`}
                 >

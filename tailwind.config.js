@@ -5,16 +5,16 @@ export default {
     extend: {
       colors: {
         primary: {
-          50:  '#eff8ff',
-          100: '#dbeffe',
-          200: '#bfe3fd',
-          300: '#93d0fc',
-          400: '#60b4f9',
-          500: '#3b94f5',
-          600: '#2575e9',
-          700: '#1d5fd6',
-          800: '#1e4dac',
-          900: '#1e4188',
+          50:  '#fdfee8',
+          100: '#fbfdc3',
+          200: '#f8fb8a',
+          300: '#f3f755',
+          400: '#ecfc3a',
+          500: '#d4e415',
+          600: '#b8c800',
+          700: '#9aaa00',
+          800: '#7d8b00',
+          900: '#626d00',
         },
         teal: {
           50:  '#f0fdfc',
@@ -40,13 +40,13 @@ export default {
         '4xl': '2rem',
       },
       boxShadow: {
-        card:  '0 4px 24px -4px rgba(37,117,233,0.10)',
-        glow:  '0 0 32px 4px rgba(37,117,233,0.18)',
+        card:  '0 4px 24px -4px rgba(154,170,0,0.15)',
+        glow:  '0 0 32px 4px rgba(236,252,58,0.25)',
         soft:  '0 8px 48px -8px rgba(0,0,0,0.10)',
       },
       backgroundImage: {
-        'hero-gradient': 'linear-gradient(135deg, #eff8ff 0%, #f0fdfc 50%, #fff 100%)',
-        'cta-gradient':  'linear-gradient(135deg, #1d5fd6 0%, #0d9488 100%)',
+        'hero-gradient': 'linear-gradient(135deg, #fdfee8 0%, #f0fdfc 50%, #fff 100%)',
+        'cta-gradient':  'linear-gradient(135deg, #9aaa00 0%, #ecfc3a 100%)',
       },
       animation: {
         'float':    'float 6s ease-in-out infinite',

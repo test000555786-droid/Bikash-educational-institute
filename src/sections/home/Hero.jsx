@@ -12,7 +12,7 @@ const badges = [
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-cover bg-center min-h-screen lg:h-screen lg:max-h-[1000px] flex flex-col justify-center pt-20 pb-8 lg:pt-0" style={{ backgroundImage: "url('/images/heroes/hero-home.png')" }}>
+    <section className="relative overflow-hidden bg-cover bg-center min-h-screen lg:h-screen lg:max-h-[1000px] flex flex-col justify-center pt-20 pb-8 lg:pt-0" style={{ backgroundImage: "url('/images/heroes/hero-home.jpg')" }}>
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-slate-900/70" />
       
@@ -101,58 +101,58 @@ export default function Hero() {
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.75, delay: 0.35 }}
-            className="relative"
+            className="relative lg:w-[88%] lg:ml-auto"
           >
             {/* Main card */}
-            <div className="relative rounded-3xl lg:rounded-4xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_50px_-10px_rgba(0,0,0,0.4)] border border-white/50 overflow-hidden group flex flex-col w-full lg:max-h-[85vh] transition-all duration-300 hover:-translate-y-1 z-20">
-              {/* 1. Image Section (Background: Lowest Layer in Card) */}
-              <div className="relative h-32 sm:h-40 xl:h-[200px] w-full overflow-hidden shrink-0 z-10">
+            <div className="relative rounded-3xl lg:rounded-[2rem] shadow-[0_15px_60px_-10px_rgba(0,0,0,0.5)] hover:shadow-[0_25px_60px_-5px_rgba(0,0,0,0.6)] border border-white/20 overflow-hidden group flex flex-col w-full transition-all duration-300 hover:-translate-y-1 z-20">
+              
+              {/* Image filling entire background */}
+              <div className="absolute inset-0 z-0">
                 <img 
-                  src="/images/heroes/hero-about.png" 
+                  src="/images/heroes/hero-about.webp" 
                   alt="Classroom Environment" 
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/20 to-slate-900/80" />
+                <div className="absolute inset-0 bg-slate-950/60 backdrop-blur-[4px]" />
               </div>
 
-              {/* 2. Floating "M" Badge (Middle Layer: Anchored explicitly above Both Image and Content) */}
-              <div className="relative z-40 h-0 flex justify-center w-full">
-                <div className="absolute top-0 -translate-y-1/2 transition-transform duration-300 group-hover:scale-105">
-                   <div className="w-14 h-14 lg:w-16 lg:h-16 rounded-xl lg:rounded-2xl bg-cta-gradient flex items-center justify-center shadow-xl border-[3px] lg:border-4 border-white">
-                     <span className="text-white font-bold text-xl lg:text-2xl font-display">B</span>
-                   </div>
-                </div>
-              </div>
-
-              {/* 3. Content Section (Vignette Style, scrollable if squashed) */}
-              <div className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/95 via-white/80 to-slate-200/60 shadow-[inset_0_0_60px_rgba(0,0,0,0.05)] backdrop-blur-xl relative z-10 flex-1 flex flex-col justify-between overflow-y-auto custom-scrollbar px-6 sm:px-8 pb-6 pt-10 lg:pt-12 text-center">
+              {/* Content Overlay */}
+              <div className="relative z-10 flex-1 flex flex-col items-center px-6 sm:px-8 py-8 lg:py-10 text-center w-full">
                 
-                <div>
-                  <h2 className="text-base lg:text-lg font-bold text-slate-900 font-display">Bikash Educational Institution</h2>
-                  <p className="text-[11px] lg:text-xs text-slate-600 mt-0.5 mb-5 lg:mb-6 opacity-80">Est. 2010 · Cuttack, Odisha</p>
-
-                  <div className="grid grid-cols-2 gap-2 sm:gap-3 mb-5 lg:mb-6">
-                    {[
-                      { val: '14+', label: 'Years' },
-                      { val: '500+', label: 'Students' },
-                      { val: '4.8★', label: 'Rating' },
-                      { val: '1–8', label: 'Classes' },
-                    ].map(s => (
-                      <div key={s.label} className="bg-white/80 rounded-xl lg:rounded-2xl p-2.5 lg:p-3 text-center shadow-[0_4px_15px_rgba(0,0,0,0.03)] border border-white transition-transform hover:-translate-y-0.5">
-                        <p className="text-lg lg:text-xl xl:text-2xl font-bold text-primary-700 font-display leading-tight">{s.val}</p>
-                        <p className="text-[9px] xl:text-[10px] uppercase font-semibold tracking-wide text-slate-500 mt-0.5">{s.label}</p>
-                      </div>
-                    ))}
+                {/* Logo */}
+                <div className="mb-4 lg:mb-5">
+                  <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-2xl lg:rounded-[1.25rem] bg-slate-900/40 backdrop-blur-md flex items-center justify-center shadow-xl border border-white/20 p-2.5 transition-transform duration-300 group-hover:scale-105 overflow-hidden">
+                    <img src="/images/logo/Bikash-ins.png" alt="Bikash Logo" className="w-full h-full object-contain saturate-150 drop-shadow-md" />
                   </div>
                 </div>
 
-                <a href={INSTITUTE.phoneHref} className="flex items-center justify-center gap-2 bg-primary-700 hover:bg-primary-800 text-white rounded-xl lg:rounded-2xl py-3 font-semibold transition-all text-xs lg:text-sm shadow-card hover:shadow-glow hover:-translate-y-0.5 shrink-0 mt-auto">
-                  <Phone size={16} className="w-3.5 h-3.5 lg:w-4 lg:h-4" /> Call Now: {INSTITUTE.phone}
+                <div className="mb-6 lg:mb-8 w-full">
+                  <h2 className="text-xl lg:text-[1.35rem] leading-snug font-bold text-white font-display">Bikash Educational Institution</h2>
+                  <p className="text-[11px] lg:text-xs text-slate-300 mt-1 opacity-90 tracking-wide">Est. 2010 · Cuttack, Odisha</p>
+                </div>
+
+                {/* 4 Block Stats */}
+                <div className="grid grid-cols-2 gap-3 sm:gap-4 w-full mb-6 lg:mb-8">
+                  {[
+                    { val: '14+', label: 'Years' },
+                    { val: '500+', label: 'Students' },
+                    { val: '4.8★', label: 'Rating' },
+                    { val: '1–8', label: 'Classes' },
+                  ].map(s => (
+                    <div key={s.label} className="bg-slate-900/50 backdrop-blur-md rounded-2xl p-4 lg:p-5 text-center shadow-[0_8px_32px_rgba(0,0,0,0.15)] border border-white/10 transition-transform hover:-translate-y-1">
+                      <p className="text-xl lg:text-2xl xl:text-3xl font-bold text-white font-display leading-tight drop-shadow-sm">{s.val}</p>
+                      <p className="text-[10px] lg:text-xs uppercase font-bold tracking-widest text-slate-400 mt-1.5">{s.label}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <a href={INSTITUTE.phoneHref} className="flex items-center justify-center gap-2 w-full bg-primary-400 hover:bg-primary-500 text-slate-900 rounded-xl lg:rounded-2xl py-3.5 lg:py-4 font-bold transition-all text-sm lg:text-base shadow-[0_0_20px_rgba(236,252,58,0.25)] hover:shadow-[0_0_30px_rgba(236,252,58,0.4)] shrink-0">
+                  <Phone size={18} className="w-4 h-4 lg:w-5 lg:h-5" /> Call Now: {INSTITUTE.phone}
                 </a>
               </div>
             </div>
 
-            {/* Floating badge 1: Batch Starting (Highest Layer) */}
+            {/* Floating badge 1: Batch Starting */}
             <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{ repeat: Infinity, duration: 3.5, ease: 'easeInOut' }}
@@ -161,7 +161,7 @@ export default function Hero() {
               <p className="text-xs font-bold text-slate-800">🎉 New Batch Starting!</p>
             </motion.div>
             
-            {/* Floating badge 2: Reviews (Highest Layer) */}
+            {/* Floating badge 2: Reviews */}
             <motion.div
               animate={{ y: [0, 8, 0] }}
               transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut', delay: 1 }}

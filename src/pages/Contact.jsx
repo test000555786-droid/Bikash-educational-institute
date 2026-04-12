@@ -17,7 +17,7 @@ const contactItems = [
 export default function Contact() {
   return (
     <>
-      <section className="relative bg-cover bg-center pt-10 pb-16 md:pt-12 md:pb-20" style={{ backgroundImage: "url('/images/heroes/hero-contact.png')" }}>
+      <section className="relative bg-cover bg-center pt-10 pb-16 md:pt-12 md:pb-20" style={{ backgroundImage: "url('/images/heroes/contact-home.webp')" }}>
         <div className="absolute inset-0 bg-slate-900/70" />
         <div className="container-main relative z-10 text-center">
           <FadeIn>
@@ -96,7 +96,7 @@ export default function Contact() {
               {/* Google Maps embed placeholder — replace src with actual embed URL */}
               <iframe
                 title="Bikash Educational Institution Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.5!2d85.8830!3d20.4525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a79c0a79c0a7%3A0x1!2sSrivihar%20Colony%2C%20Cuttack%2C%20Odisha!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Bikash%20educational%20institutions,%20926/A/1,%20Srivihar%20Colony,%20Masik%20Patna%20Colony,%20Cuttack,%20Odisha%20753008&t=&z=15&ie=UTF8&iwloc=B&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

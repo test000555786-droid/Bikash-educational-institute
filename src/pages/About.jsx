@@ -20,7 +20,7 @@ export default function About() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-cover bg-center pt-10 pb-16 md:pt-12 md:pb-20" style={{ backgroundImage: "url('/images/heroes/hero-about.png')" }}>
+      <section className="relative bg-cover bg-center pt-10 pb-16 md:pt-12 md:pb-20" style={{ backgroundImage: "url('/images/heroes/about-home.webp')" }}>
         <div className="absolute inset-0 bg-slate-900/70" />
         <div className="container-main relative z-10">
           <FadeIn className="text-center">
@@ -67,7 +67,7 @@ export default function About() {
                 {milestones.map((m, i) => (
                   <div key={m.year} className="flex gap-4 items-start">
                     <div className="flex flex-col items-center">
-                      <div className="w-10 h-10 rounded-xl bg-primary-700 flex items-center justify-center text-white text-xs font-bold shrink-0">{m.year.slice(2)}</div>
+                      <div className="w-10 h-10 rounded-xl bg-primary-400 flex items-center justify-center text-slate-900 text-xs font-bold shrink-0">{m.year.slice(2)}</div>
                       {i < milestones.length - 1 && <div className="w-0.5 flex-1 bg-primary-100 mt-1 min-h-[20px]" />}
                     </div>
                     <div className="pb-4">
@@ -103,7 +103,7 @@ export default function About() {
           {/* Faculty */}
           <SectionHeader eyebrow="Meet the Team" title="Our Faculty" subtitle="Experienced, passionate educators who genuinely care about every student's success." />
           <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {facultyData.map(f => (
+            {facultyData.slice(0, 4).map(f => (
               <StaggerItem key={f.name}>
                 <motion.div
                   className="group relative rounded-3xl overflow-hidden shadow-card hover:shadow-2xl transition-shadow duration-400 aspect-[3/4] flex flex-col justify-end"
@@ -128,7 +128,7 @@ export default function About() {
                         <div className="pt-3 mt-3 border-t border-white/20">
                           <div className="flex flex-wrap items-center gap-2 mb-3">
                             <span className="badge bg-white/20 backdrop-blur-md text-white border-0 text-[10px] px-2 py-1 uppercase tracking-wider">{f.qualification}</span>
-                            <span className="badge bg-primary-500/40 backdrop-blur-md text-white border-0 text-[10px] px-2 py-1 uppercase tracking-wider">{f.experience}</span>
+                            <span className="badge bg-primary-400/60 backdrop-blur-md text-slate-900 border-0 text-[10px] px-2 py-1 uppercase tracking-wider">{f.experience}</span>
                           </div>
                           <p className="text-slate-200 text-sm leading-relaxed">{f.description}</p>
                         </div>
@@ -139,6 +139,44 @@ export default function About() {
               </StaggerItem>
             ))}
           </StaggerContainer>
+
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-6">
+            {facultyData.slice(4).map(f => (
+              <div key={f.name} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]">
+                <motion.div
+                  className="group relative rounded-3xl overflow-hidden shadow-card hover:shadow-2xl transition-shadow duration-400 aspect-[3/4] flex flex-col justify-end w-full"
+                >
+                  {/* Background Image */}
+                  <img src={f.image} alt={f.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
+                  
+                  {/* Gradient Overlay for Text Readability */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/95 via-slate-900/50 to-transparent transition-opacity duration-400 group-hover:from-slate-900" />
+                  
+                  {/* Content Area */}
+                  <div className="relative z-10 p-6 flex flex-col justify-end h-full">
+                    {/* Default visible info */}
+                    <div className="transform transition-transform duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:-translate-y-2">
+                       <h3 className="font-bold text-white text-2xl font-display">{f.name}</h3>
+                       <p className="text-primary-300 font-medium mt-1">{f.subject}</p>
+                    </div>
+
+                    {/* Expanded details */}
+                    <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)]">
+                      <div className="overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                        <div className="pt-3 mt-3 border-t border-white/20">
+                          <div className="flex flex-wrap items-center gap-2 mb-3">
+                            <span className="badge bg-white/20 backdrop-blur-md text-white border-0 text-[10px] px-2 py-1 uppercase tracking-wider">{f.qualification}</span>
+                            <span className="badge bg-primary-400/60 backdrop-blur-md text-slate-900 border-0 text-[10px] px-2 py-1 uppercase tracking-wider">{f.experience}</span>
+                          </div>
+                          <p className="text-slate-200 text-sm leading-relaxed">{f.description}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>

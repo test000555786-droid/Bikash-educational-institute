@@ -1,7 +1,7 @@
 import React from 'react'
 
 const variants = {
-  primary:       'bg-primary-700 hover:bg-primary-800 text-white shadow-card hover:shadow-glow',
+  primary:       'bg-primary-400 hover:bg-primary-500 text-slate-900 shadow-card hover:shadow-glow',
   secondary:     'bg-white hover:bg-primary-50 text-primary-700 border border-primary-200',
   teal:          'bg-teal-600 hover:bg-teal-700 text-white shadow-card',
   outline:       'bg-transparent hover:bg-primary-50 text-primary-700 border border-primary-300',
