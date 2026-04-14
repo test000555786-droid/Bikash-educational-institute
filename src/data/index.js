@@ -162,7 +162,7 @@ export const resultsData = {
     { label: 'Happy Families', value: 200, suffix: '+' },
   ],
   toppers: [
-    { name: 'Ananya Das',      class: '8th', percentage: '97.5%', year: '2024', subject: 'Science & Math', image: '/images/students/student-aryan.png', school: 'Kendriya Vidyalaya, Cuttack', tagline: 'School Topper' },
+    { name: 'Smaraki Mohanty',      class: '8th', percentage: '95%', year: '2024', subject: 'Science & Math', image: '/images/students/s-m-topper.webp', school: 'CAMBRIDGE SCHOOL, Cuttack', tagline: 'Class Topper' },
     { name: 'Rohan Pattnaik', class: '5th', percentage: '96.8%', year: '2024', subject: 'All Subjects',   image: '/images/students/student-priyanka.png', school: 'DAV Public School', tagline: 'Class Topper' },
     { name: 'Sneha Behera',   class: '8th', percentage: '95.4%', year: '2023', subject: 'Mathematics',    image: '/images/students/student-rohit.png', school: 'Stewart School', tagline: 'Math Olympiad Winner' },
     { name: 'Arjun Mohapatra',class: '7th', percentage: '96.2%', year: '2023', subject: 'Science',        image: '/images/students/student-ananya.png', school: 'SAI International', tagline: 'Science Star' },
