@@ -162,12 +162,17 @@ export const resultsData = {
     { label: 'Happy Families', value: 200, suffix: '+' },
   ],
   toppers: [
-    { name: 'Smaraki Mohanty',      class: '10th', percentage: '95%', year: '2024', subject: 'Science & Math', image: '/images/students/s-m-topper.webp', school: 'CAMBRIDGE SCHOOL, Cuttack', tagline: 'Class Topper' },
-    { name: 'Rohan Pattnaik', class: '5th', percentage: '96.8%', year: '2024', subject: 'All Subjects',   image: '/images/students/student-priyanka.png', school: 'DAV Public School', tagline: 'Class Topper' },
-    { name: 'Sneha Behera',   class: '8th', percentage: '95.4%', year: '2023', subject: 'Mathematics',    image: '/images/students/student-rohit.png', school: 'Stewart School', tagline: 'Math Olympiad Winner' },
-    { name: 'Arjun Mohapatra',class: '7th', percentage: '96.2%', year: '2023', subject: 'Science',        image: '/images/students/student-ananya.png', school: 'SAI International', tagline: 'Science Star' },
-    { name: 'Priya Nayak',    class: '5th', percentage: '98.0%', year: '2022', subject: 'All Subjects',   image: '/images/students/student-siddharth.png', school: 'BJEM School', tagline: 'District Topper' },
-    { name: 'Riya Jena',      class: '8th', percentage: '94.5%', year: '2022', subject: 'English & EVS',  image: '/images/students/student-kavya.png', school: 'ODM Public School', tagline: 'Academic Excellence' },
+    { name: 'Smaraki Mohanty',      class: '10th', percentage: '95.0%', year: '2024', subject: 'All Subjects', image: '/images/students/s-m-topper.webp', school: 'CAMBRIDGE SCHOOL(ICSE), Cuttack', tagline: 'Class Topper' },
+
+    { name: 'Anuska Das', class: '8th', percentage: '95.0%', year: '2026', subject: 'English',   image: '/images/students/a-das-eng.webp', school: 'S.S.V.M,Tulasipur,cuttack', tagline: 'Class Topper' },
+
+    { name: 'Unnat ku Naik',   class: '8th', percentage: '94.0%', year: '2026', subject: 'All Subjects',    image: '/images/students/u-ku.webp', school: 'Ravenshaw Collegiate School', tagline: 'Class Topper' },
+
+    { name: 'Aliva Kumari Dash',class: '9th', percentage: '96.0%', year: '2026', subject: 'Science and Mathematics',        image: '/images/students/a-dash.webp', school: 'PM SHRI RAVENSHAW GOVT. GIRLs Higher Secondary School, Cuttack', tagline: 'Science & Math Star' },
+
+    { name: 'Saisrusti Dalai',    class: '5th', percentage: '92.0%', year: '2026', subject: 'All Subjects',   image: '/images/students/s-shruti.webp', school: 'Kendriya Vidyalaya no1, Cuttack', tagline: 'Class Topper' },
+
+    { name: 'Tejyoswini Samal',      class: '8th', percentage: '96.0%', year: '2026', subject: 'All Subjects',  image: '/images/students/t-samal.webp', school: 'St. Xavier high school,Barabati, Cuttack', tagline: 'Academic Excellence' },
   ],
 }
 
@@ -264,9 +269,9 @@ export const facultyData = [
     color: 'bg-blue-600',
   },
   {
-    name: 'Mr. P. K. Satapathy',
+    name: 'Mr. P. Ku. Satapathy',
     subject: 'Odia, Hindi, Sanskrit, and Computer',
-    experience: '4+ years',
+    experience: '9+ years',
     qualification: 'B.Sc/ M.Sc',
     image: '/images/faculty/s-sir.webp',
     description: 'Focused on building strong communication skills and a love of reading from an early age.',
@@ -276,7 +281,7 @@ export const facultyData = [
   {
     name: 'Mr. Keshab Nath',
     subject: 'Physics, Math, Geography, History, Civics',
-    experience: '3+ years',
+    experience: '6+ years',
     qualification: 'B.sc/ M.sc',
     image: '/images/faculty/k-nath.webp',
     description: 'Experienced in teaching complex concepts in an easy-to-understand manner, fostering critical thinking and curiosity.',
@@ -286,7 +291,7 @@ export const facultyData = [
   {
     name: 'Ms. Neetushree Tarenia',
     subject: 'Science, Mathematics and SST',
-    experience: '5+ years',
+    experience: '4+ years',
     qualification: 'B.com/ M.com/ B.Ed/ OSSTET/ OTET',
     image: '/images/faculty/N-tarenia.webp',
     description: 'Passionate about connecting science to real life, making it relevant and exciting for young minds.',
@@ -297,7 +302,7 @@ export const facultyData = [
   {
     name: 'Ms. Subhasmita Swain',
     subject: 'English, Odia, SST',
-    experience: '3+ years',
+    experience: '2+ years',
     qualification: 'BA/ MA',
     image: '/images/faculty/s-swain.webp',
     description: 'Nurtures language skills and cultural awareness in young learners with a patient, caring approach.',
