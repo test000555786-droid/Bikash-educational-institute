@@ -180,13 +180,13 @@ export const resultsData = {
 
     { name: 'Manosmita Sahoo', class: '10th', percentage: '95.0%', year: '2026', subject: 'All subjects', image: '/images/students/m-sahoo.webp', school: 'FREEDOM INTERNATIONAL SCHOOL(CBSE), Cuttack', tagline: 'Science Star' },
 
-    { name: 'Rahul Mishra', class: '8th', percentage: '95.5%', year: '2026', subject: 'Mathematics', image: '/images/students/u-ku.webp', school: 'Ravenshaw Collegiate School', tagline: 'Math Prodigy' },
+    { name: 'Simran Sahoo', class: '10th', percentage: '89.0%', year: '2026', subject: 'Mathematics', image: '/images/students/sim-sahoo.webp', school: 'Freedom International School(CBSE), Cuttack', tagline: 'Class Prodigy' },
 
-    { name: 'Sneha Nayak', class: '7th', percentage: '92.5%', year: '2026', subject: 'All Subjects', image: '/images/students/a-dash.webp', school: 'Kendriya Vidyalaya no1, Cuttack', tagline: 'Class Topper' },
+    { name: 'Manav Kumar Sahoo', class: '10th', percentage: '92.5%', year: '2026', subject: 'Odia ,Science', image: '/images/students/maanav.webp', school: 'Freedom International School(CBSE), Cuttack', tagline: 'Class Topper' },
 
-    { name: 'Rohan Tripathy', class: '6th', percentage: '91.0%', year: '2026', subject: 'English', image: '/images/students/s-shruti.webp', school: 'St. Xavier high school, Barabati, Cuttack', tagline: 'English Scholar' },
+    { name: 'Chandrabhanu Panda', class: '4th', percentage: '91.0%', year: '2026', subject: 'English', image: '/images/students/c-panda.webp', school: 'St. Xavier high school, Barabati, Cuttack', tagline: 'English Scholar' },
 
-    { name: 'Ipsita Sahoo', class: '8th', percentage: '96.5%', year: '2026', subject: 'All Subjects', image: '/images/students/t-samal.webp', school: 'PM SHRI RAVENSHAW GOVT. GIRLs Higher Secondary School, Cuttack', tagline: 'Overall Champion' },
+    { name: 'Ipsita Sahoo', class: '8th', percentage: '96.5%', year: '2026', subject: 'All Subjects', image: '/images/students/student-kavya.webp', school: 'PM SHRI RAVENSHAW GOVT. GIRLs Higher Secondary School, Cuttack', tagline: 'Overall Champion' },
   ],
 }
 
