@@ -10,9 +10,9 @@ export const INSTITUTE = {
   email: 'info@bikashedu.in',
   address: 'Bikash educational institutions, 926/A/1, Srivihar Colony, Masik Patna Colony, Cuttack, Odisha 753008',
   serviceArea: 'Tulsipur',
-  googleRating: 4.8,
+  googleRating: 5,
   googleReviews: 5,
-  justdialRating: 4.8,
+  justdialRating: 5,
   justdialVotes: 12,
   mapEmbed: 'https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Bikash%20educational%20institutions,%20926/A/1,%20Srivihar%20Colony,%20Masik%20Patna%20Colony,%20Cuttack,%20Odisha%20753008&t=&z=15&ie=UTF8&iwloc=B&output=embed',
 }

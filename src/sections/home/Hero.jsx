@@ -5,7 +5,7 @@ import { ArrowRight, Star, Users, Award, Phone } from 'lucide-react'
 import { INSTITUTE } from '../../utils/constants'
 
 const badges = [
-  { icon: Star,  label: '4.8★ Rated',        sub: '5+ Google Reviews' },
+  { icon: Star,  label: '5★ Rated',        sub: '5+ Google Reviews' },
   { icon: Users, label: '500+ Students',      sub: 'Since Year 2010' },
   { icon: Award, label: '14+ Years',          sub: 'Of Excellence' },
 ]
@@ -136,7 +136,7 @@ export default function Hero() {
                   {[
                     { val: '14+', label: 'Years' },
                     { val: '500+', label: 'Students' },
-                    { val: '4.8★', label: 'Rating' },
+                    { val: '5★', label: 'Rating' },
                     { val: '1–8', label: 'Classes' },
                   ].map(s => (
                     <div key={s.label} className="bg-slate-900/50 backdrop-blur-md rounded-2xl p-4 lg:p-5 text-center shadow-[0_8px_32px_rgba(0,0,0,0.15)] border border-white/10 transition-transform hover:-translate-y-1">

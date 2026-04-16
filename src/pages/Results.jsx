@@ -97,11 +97,11 @@ export default function Results() {
               <div className="flex justify-center gap-1 mb-3">
                 {Array.from({ length: 5 }).map((_, i) => <Star key={i} size={28} className="text-yellow-400 fill-yellow-400" />)}
               </div>
-              <p className="text-4xl font-bold text-slate-900 font-display mb-2">4.8 / 5</p>
+              <p className="text-4xl font-bold text-slate-900 font-display mb-2">5 / 5</p>
               <p className="text-slate-500 mb-6">Based on Google Reviews — trusted by 200+ families across Cuttack & Tulsipur</p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <div className="bg-slate-50 rounded-2xl px-6 py-3 border border-slate-100">
-                  <p className="font-bold text-slate-900">⭐ 4.8</p>
+                  <p className="font-bold text-slate-900">⭐ 5</p>
                   <p className="text-xs text-slate-400 mt-0.5">Google · 5+ reviews</p>
                 </div>
                 <div className="bg-slate-50 rounded-2xl px-6 py-3 border border-slate-100">

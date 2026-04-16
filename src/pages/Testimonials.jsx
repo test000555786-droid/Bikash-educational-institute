@@ -64,7 +64,7 @@ export default function Testimonials() {
           {/* Ratings banner */}
           <FadeIn>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8 bg-primary-50 border border-primary-100 rounded-3xl p-8 mb-14">
-              {[['Google Reviews', '4.8★', '5+ ratings'], ['Families Served', '200+', 'Happy families']].map(([platform, rating, count]) => (
+              {[['Google Reviews', '5★', '5+ ratings'], ['Families Served', '200+', 'Happy families']].map(([platform, rating, count]) => (
                 <div key={platform} className="text-center">
                   <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">{platform}</p>
                   <p className="text-4xl font-bold text-primary-700 font-display">{rating}</p>

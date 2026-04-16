@@ -59,7 +59,7 @@ export default function TestimonialsPreview() {
             <div className="flex justify-center gap-1 mb-1">
               {Array.from({ length: 5 }).map((_, i) => <Star key={i} size={20} className="text-yellow-400 fill-yellow-400" />)}
             </div>
-            <p className="text-2xl font-bold text-slate-900 font-display">4.8 / 5</p>
+            <p className="text-2xl font-bold text-slate-900 font-display">5 / 5</p>
             <p className="text-xs text-slate-400 mt-0.5">Google Reviews · 5+ ratings</p>
           </div>
           <div className="hidden sm:block w-px h-12 bg-slate-200" />

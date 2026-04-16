@@ -80,7 +80,7 @@ export default function Footer() {
               </li>
             </ul>
             <div className="mt-5 text-xs text-slate-500 bg-slate-800 rounded-xl p-3">
-              <p>⭐ 4.8/5 Google · 5+ reviews</p>
+              <p>⭐ 5/5 Google · 5+ reviews</p>
               <p className="mt-1">📍 Tulsipur, Cuttack, Odisha</p>
             </div>
           </div>

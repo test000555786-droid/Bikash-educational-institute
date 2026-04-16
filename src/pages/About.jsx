@@ -52,7 +52,7 @@ export default function About() {
                 Located in Srivihar Colony, Cuttack, we serve families across the Tulsipur area and beyond, supporting both Odia and English medium learners from Class 1 through Class 8.
               </p>
               <div className="grid grid-cols-3 gap-4">
-                {[['14+', 'Years'], ['500+', 'Students'], ['4.8★', 'Rating']].map(([v, l]) => (
+                {[['14+', 'Years'], ['500+', 'Students'], ['5★', 'Rating']].map(([v, l]) => (
                   <div key={l} className="text-center bg-primary-50 rounded-2xl py-4 border border-primary-100">
                     <p className="text-2xl font-bold text-primary-700 font-display">{v}</p>
                     <p className="text-xs text-slate-500 mt-0.5">{l}</p>
